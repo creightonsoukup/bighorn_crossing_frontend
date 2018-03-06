@@ -1,0 +1,46 @@
+.neighborhood-header {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 5vw 0 5vw;
+
+  @include respond-to('small') {
+    font-size: 50px;
+  }
+  @include respond-to('medium') {
+    font-size: 70px;
+    line-height: 90px;
+    text-align: left;
+  }
+
+  @include respond-to('large') {
+    position: absolute;
+    padding: 0;
+    top: 70%;
+    right: 80;
+    text-align: right;
+    font-size: 75px;
+    color: $bighorn-grey;
+    font-weight: bold;
+    max-width: 60vw;
+    line-height: 100px;
+  }
+}
+
+.neighborhood-intro {
+  @include respond-to('large') {
+    h2:after {
+      position: absolute;
+      width: 10px;
+      content: '';
+      height: 90%;
+      right: -30;
+      top: 10;
+      background-color: $bighorn-brown;
+    }
+  }
+}
+
+.main-image {
+  margin-bottom: 5vh;
+}

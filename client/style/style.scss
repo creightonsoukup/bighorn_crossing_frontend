@@ -1,0 +1,35 @@
+@import
+  'abstracts/variables',
+  'abstracts/mixins';
+
+@import
+  'base/reset',
+  'base/fonts';
+
+@import
+  'layout/nav';
+
+@import
+  'components/imageGallery',
+  'components/textBlock',
+  'components/headers',
+  'components/fullpage-image',
+  'components/btn',
+  'components/colorBlock',
+  'components/floorplan',
+  'components/gallery',
+  'components/list',
+  'components/footer',
+  'components/form';
+
+@import
+  'sections/homepage',
+  'sections/townhomes',
+  'sections/condos',
+  'sections/neighborhood',
+  'sections/next-steps',
+  'sections/404';
+
+main {
+  margin-top: 80px;
+}

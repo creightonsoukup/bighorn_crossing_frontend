@@ -1,0 +1,49 @@
+.fullpage-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 45vh;
+  overflow: hidden;
+  background-color: $bighorn-grey;
+  img {
+   width: 100vw;
+   transform: scale(1.4);
+   @include respond-to('large') {
+     transform: scale(1);
+     height: 100%;
+     width: auto;
+   }
+   @include respond-to('huge') {
+     transform: scale(1.15);
+   };
+  }
+  @include respond-to('small') {
+    min-height: 70vh;
+  }
+  @include respond-to('medium') {
+    min-height: 80vh;
+  }
+  @include respond-to('large') {
+    min-height: 100vh;
+  }
+}
+
+.neighborhood {
+  .fullpage-image {
+    img {
+      @include respond-to('large') {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.condos {
+  .fullpage-image {
+      @include respond-to('large') {
+        margin-bottom: 75px;
+      }
+  }
+}

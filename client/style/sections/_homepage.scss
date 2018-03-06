@@ -1,0 +1,26 @@
+.homepage {
+  margin-top: 80px;
+  section {
+    @include respond-to('large') {
+      overflow: hidden;
+    }
+  }
+  .overflow {
+    max-height: 900px;
+
+  }
+ .text-only {
+   @include respond-to('large') {
+     height: auto;
+   };
+  }
+  h1 {
+    display: none;
+    @include respond-to('large') {
+      display: flex;
+    }
+  }
+  @include respond-to('large') {
+    overflow: hidden;
+  }
+}

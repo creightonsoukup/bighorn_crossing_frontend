@@ -1,0 +1,58 @@
+.list {
+  background-color: $bighorn-grey;
+  padding: 20px;
+  margin: 20px;
+  @include respond-to('small') {
+    padding: 30px;
+  }
+  @include respond-to('medium') {
+    padding: 40px;
+    margin: 40px;
+  }
+  h3 {
+    font-family: $subheader-font;
+    font-size: 20px;
+    line-height: 30px;
+    @include respond-to('small') {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    @include respond-to('medium') {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+  ul {
+    margin: 20px 0 20px 0;
+  }
+  li {
+    margin: 15px 0 15px 0;
+    line-height: 24px;
+    font-size: 16px;
+    @include respond-to('medium') {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  p {
+    margin: 20px 0 30px 0;
+    font-size: 16px;
+    line-height: 20px;
+    @include respond-to('medium') {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.left-list {
+  @include respond-to('large') {
+    margin: 40px 40vw 0 0;
+  }
+}
+
+.right-list {
+  @include respond-to('large') {
+    margin: 40px 0 0 40vw;
+  }
+}

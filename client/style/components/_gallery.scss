@@ -1,0 +1,35 @@
+.images {
+  img {
+    max-width: 60vw;
+    height: auto;
+  }
+}
+
+.gallery-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .arrows {
+    max-width: 30px;
+    padding: 20px;
+    @include respond-to('small') {
+      padding: 50px;
+    }
+  }
+}
+
+.gallery-captions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 0 2vh 0;
+  .caption {
+    p {
+      text-align: center;
+      padding: 40px;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+.contact-broker {
+  height: 100%;
+  width: 100%;
+  @include respond-to('small') {
+    margin-top: 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $bighorn-grey;
+    padding: 20px;
+    border: 8px solid $bighorn-brown;
+    box-sizing: border-box;
+    align-items: center;
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: auto;
+      font-size: 12px;
+      color: black;
+      span {
+        padding-bottom: 5px;
+      }
+    }
+    input {
+      background-color: $bighorn-grey;
+      font-size: 14px;
+      height: 40px;
+      color: black;
+      border: 3px solid $bighorn-brown;
+      width: 70vw;
+      @include respond-to('large') {
+        width: 50vw;
+        margin: 5px 0 5px 0;
+      }
+    }
+    input:focus {
+      height: 45px;
+      border: 4px solid $bighorn-brown;
+      outline-width: 0;
+    }
+    textarea {
+      background-color: $bighorn-grey;
+      font-size: 14px;
+      height: 100px;
+      color: black;
+      border: 3px solid $bighorn-brown;
+      width: 70vw;
+      @include respond-to('large') {
+        width: 50vw;
+        margin: 5px 0 5px 0;
+      }
+    }
+    textarea:focus {
+      border: 4px solid $bighorn-brown;
+      outline-width: 0;
+    }
+    span {
+      display: flex;
+    }
+    h2 {
+      color: $bighorn-brown;
+      font-weight: bold;
+      font-size: 26px;
+      text-align: center;
+    }
+    .form-btns {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 10px;
+      @include respond-to('large') {
+        flex-direction: row;
+        width: 50vw;
+        box-sizing: border-box;
+        justify-content: space-between;
+      }
+      button {
+        background-color: transparent;
+        border: 3px solid $bighorn-brown;
+        color: black;
+        padding: 15px;
+        font-weight: bold;
+        font-size: .8em;
+        width: 50vw;
+        margin-bottom: 10px;
+        @include respond-to('large') {
+          width: 23vw;
+
+        }
+      }
+    }
+  }
+}
+
+.success {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: $bighorn-grey;
+  padding: 20px;
+  border: 8px solid $bighorn-brown;
+  box-sizing: border-box;
+  align-items: center;
+  h2 {
+    color: $bighorn-brown;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 5vh 0 5vh 0;
+  }
+  p {
+    padding-bottom: 5vh;
+  }
+  button {
+      background-color: transparent;
+      border: 3px solid $bighorn-brown;
+      color: black;
+      padding: 15px;
+      font-weight: bold;
+      font-size: .8em;
+      width: 50vw;
+      margin-bottom: 10px;
+      @include respond-to('large') {
+        width: 23vw;
+      }
+    }
+}
+
+.no-margin {
+  margin-top: 0;
+}

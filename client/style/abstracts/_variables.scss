@@ -1,0 +1,11 @@
+$bighorn-brown: #A97C50;
+$bighorn-tan: #DBB89E;
+$bighorn-grey: #F7F6F8;
+
+$breakpoints: (
+  'small': (min-width: 600px),
+  'medium': (min-width: 800px),
+  'large': (min-width: 1000px),
+  'huge': (min-width: 1200px),
+  'extra-huge': (min-width: 1400px),
+);

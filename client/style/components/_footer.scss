@@ -1,0 +1,115 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: $bighorn-tan;
+  padding: 10px;
+  @include respond-to('small') {
+    padding: 40px;
+  }
+  h4 {
+    font-weight: bold;
+  }
+}
+
+.bottom-nav {
+      position: relative;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 5px;
+    @include respond-to('medium') {
+      padding: 15px;
+    };
+    li {
+      padding: 5px;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        @include respond-to('medium') {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.bottom-nav:after {
+  width: 100px;
+  height: 6px;
+  content: '';
+  position: absolute;
+  background: black;
+  left: 8;
+  top: 8;
+}
+
+.bottom-nav:before {
+  height: 125px;
+  width: 6px;
+  content: '';
+  position: absolute;
+  background: black;
+  left: 8;
+  top: 8;
+}
+
+.addresses {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  position: relative;
+  @include respond-to('medium') {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+  .address {
+    margin: 15px;
+    text-align: right;
+    padding-right: 20px;
+    h4 {
+      margin-bottom: 8px;
+      font-size: 18px;
+      @include respond-to('medium') {
+        font-size: 24px;
+        margin-bottom: 12px;
+      };
+    }
+    p {
+      margin-bottom: 4px;
+      @include respond-to('medium') {
+        font-size: 18px;
+        margin-bottom: 8px;
+      };
+    }
+  }
+}
+
+.addresses:after {
+  width: 6px;
+  height: 90%;
+  right: 8;
+  top: 5%;
+  content: '';
+  background: black;
+  position: absolute;
+}
+
+.contact {
+  display: flex;
+  flex-grow: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  .contact-item {
+    margin: 5vw;
+  }
+}

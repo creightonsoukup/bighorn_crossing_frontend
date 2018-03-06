@@ -1,0 +1,23 @@
+.error {
+  background-color: $bighorn-tan;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  h1 {
+    font-family: $subheader-font;
+    font-weight: bold;
+    margin-top: 20vh;
+    font-size: 2em;
+    line-height: 1.5em;
+    text-align: center;
+    width: 80vw;
+  }
+  img {
+    max-width: 300px;
+    height: auto;
+    margin: 20vh;
+  }
+}

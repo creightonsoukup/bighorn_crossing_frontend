@@ -1,0 +1,160 @@
+.button-group {
+  display: flex;
+  flex-direction: column;
+  margin: 5vw;
+  justify-content: center;
+  align-items: center;
+  @include respond-to('large') {
+    margin: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .btn {
+    border: 3px solid $bighorn-brown;
+    color: black;
+    padding: 15px;
+    background-color: rgba(0,0,0,0);
+    font-weight: bold;
+    font-size: .8em;
+    margin: 10px;
+    width: 80vw;
+    @include respond-to('small') {
+      width: 60vw;
+      font-size: 1em;
+    }
+    @include respond-to('large') {
+      width: 300px;
+      margin: 10px 0 10px 0;
+    }
+  }
+}
+
+.right-btn {
+  @include respond-to('large') {
+    margin-left: 45vw;
+    transform: translate(0, 200px);
+  }
+  @include respond-to('huge') {
+    margin-left: 45vw;
+    transform: translate(0, 100px);
+  }
+
+}
+
+.left-btn {
+  @include respond-to('large') {
+    transform: translate(-55vw, 200px);
+  }
+  @include respond-to('huge') {
+    transform: translate(-55vw, 200px);
+  }
+}
+
+.left-btn2 {
+  @include respond-to('large') {
+    transform: translate(-55vw, 550px)
+  }
+}
+
+.lrg-btn {
+  font-weight: bold;
+  color: black;
+  font-size: 2em;
+  line-height: 1em;
+  padding: 10px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  border-bottom: 4px solid black;
+  @include respond-to('small') {
+    font-size: 3em;
+  }
+  @include respond-to('large') {
+    font-size: 4em;
+  }
+}
+
+.homepage-btn {
+  width: 80vw;
+  height: 10vh;
+  margin: 0vw 5vw 5vw 5vw;
+  padding: 0vw 5vw 5vw 5vw;
+  transform: translate(0,-5vw);
+  background-color: $bighorn-grey;
+  display: flex;
+  justify-content: flex-end;
+  @include respond-to('large') {
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    background-color: rgba(0,0,0,0);
+  }
+}
+
+.left-homepage-btn {
+  @include respond-to('large') {
+    justify-content: flex-start;
+    margin-top: 30vh;
+    transform: translate(0, 10vh);
+  }
+}
+
+.right-homepage-btn {
+  @include respond-to('large') {
+    justify-content: flex-end;
+    margin-top: 30vh;
+    transform: translate(0, 10vh);
+  }
+}
+
+.model-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1em;
+  margin: 0 2vw 10vh 0;
+  button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    @include respond-to('small') {
+      font-size: 18px;
+    }
+  }
+  img {
+    width: 35vw;
+  }
+  button:first-of-type {
+    img {
+        padding: 5px 0 5px 0;
+    }
+  }
+  div {
+    padding: 10px;
+    border: 2px solid $bighorn-brown;
+    font-weight: bold;
+  }
+}
+
+.condo-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  @include respond-to('large') {
+    margin: 10vh 0 5vh 0;
+  }
+  button {
+    border: 2px solid $bighorn-brown;
+    font-weight: bold;
+    padding: 10px;
+    margin: 40px 0 30px 0;
+    background-color: transparent;
+    outline: none;
+    @include respond-to('small') {
+      min-width: 200px;
+      font-size: 18px;
+    }
+  }
+}
